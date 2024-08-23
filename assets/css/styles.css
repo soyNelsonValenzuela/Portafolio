@@ -193,6 +193,27 @@ main {
     font-weight: bold;
 }
 
+/* Formacion */
+.formacion-card-container{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.formacion-image-container{
+padding: 20px;
+
+}
+.formacion-image{
+    width: 100%;
+}
+
+.formacion-card{
+    background-color: rgba(156, 156, 156, 0.1);
+    padding: 20px;
+    border-radius: 20px;
+}
+
 /* Footer */
 footer {
     padding: 1rem;
@@ -279,6 +300,18 @@ footer p {
         width: 60%;
     }
 
+    /* Formacion */
+    .formacion-card-container{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
+  
+
+    .formacion-image-container{
+        height: 70%;
+       
+    }
+   
  
 
     
