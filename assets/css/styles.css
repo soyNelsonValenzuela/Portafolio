@@ -1,0 +1,287 @@
+/* Global */
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: "Roboto mono", sans-serif;
+}
+
+.title,
+.subtitle {
+    text-shadow: 0px 0px 10px #fff;
+    margin-bottom: 20px;
+}
+
+p {
+    text-align: justify;
+    font-size: 16px;
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
+}
+
+ul {
+    list-style: none;
+}
+
+/* Body */
+body {
+    background-color: #212529;
+    color: #fff;
+}
+
+/* Header */
+
+#navbarSupportedContent {
+    justify-content: end !important;
+}
+
+.navbar-nav {
+    margin: 0 !important;
+}
+
+.nav-item {
+    transition: scale 0.5s, text-shadow 0.5s;
+}
+
+.nav-item:hover {
+    scale: 1.1;
+    text-shadow: 0px 0px 5px #fff;
+}
+
+/* Main */
+main {
+    width: 80%;
+    margin: auto;
+}
+
+/* Sección banner */
+#banner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    justify-content: center;
+    gap: 30px;
+}
+
+#foto-perfil {
+    width: 80%;
+    border-radius: 50%;
+    box-shadow: 0px 0px 10px #fff;
+    margin-bottom: 10px;
+}
+
+.text-container-banner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+}
+
+.text-container-banner h1 {
+    text-align: center;
+}
+
+.text-container-banner p {
+    text-align: justify;
+
+}
+
+/* Sección sobre mi */
+#about {
+    padding: 30px 0px;
+    height: 100vh;
+}
+
+.about-text {
+    background-color: rgba(156, 156, 156, 0.1);
+    padding: 30px;
+    border-radius: 30px;
+
+}
+
+/* .networks {
+    margin-top: 20px;
+    display: flex;
+    gap: 5px;
+
+}
+
+.title__network__item {
+    font-size: 14px;
+    font-weight: 500;
+} */
+
+/* skills */
+
+#skills {
+    height: 100vh;
+    padding: 30px 0;
+}
+
+.skills-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.skill-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 5%;
+    padding: 10%;
+    gap: 5px;
+    border-radius: 10px;
+    background-color: rgba(156, 156, 156, 0.1);
+}
+
+.skill-item img {
+    width: 60%;
+}
+
+/* proyectos */
+
+
+.project-card {
+    padding: 10px 0;
+}
+
+.image-container {
+    margin: 20px 0;
+}
+
+.project-image {
+    width: 100%;
+    border-radius: 20px;
+}
+
+.project-text p {
+    margin: 30px 0;
+    text-align: start;
+    background-color: rgba(156, 156, 156, 0.1);
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.project-button-box {
+    display: flex;
+    justify-content: space-around;
+}
+
+.project-btn {
+    padding: 0.4rem;
+    width: 40%;
+    border: none;
+    border-radius: 20px;
+    box-shadow: 2px 2px 10px;
+}
+
+.repo {
+    background-color: #1975e8;
+}
+
+.demo {
+    background-color: rgba(156, 156, 156, 0.1);
+}
+
+.project-btn a {
+    font-weight: bold;
+}
+
+/* Footer */
+footer {
+    padding: 1rem;
+}
+
+footer p {
+    text-align: center;
+}
+
+
+/* responsivo desktop */
+@media (min-width: 1024px) {
+
+    /* Nav Bar */
+    .navbar-nav {
+        gap: 1rem !important;
+    }
+
+    /* Banner */
+
+    #banner {
+        flex-direction: row-reverse;
+        gap: 50px;
+    }
+
+    #foto-perfil {
+        width: 40%;
+    }
+
+    .text-container-banner h1 {
+        text-align: start;
+    }
+
+    /* Sección sobre mi */
+
+    #about {
+        height: 40vh;
+    }
+
+    /* Sección skills */
+    #skills {
+        height: 60vh;
+    }
+
+    .skills-container {
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        grid-column-gap: 0px;
+        grid-row-gap: 0px;
+    }
+
+    #bootstrap-container {
+        grid-area: 2/2/3/3;
+    }
+
+    #git-container {
+        grid-area: 2/3/3/4;
+    }
+
+    #github-container {
+        grid-area: 2/4/3/5;
+    }
+
+    /* Sección Proyectos */
+
+    .project-card {
+        display: flex;
+        gap: 30px;
+    }
+
+    .project-card:nth-child(2n+1){
+        flex-direction: row-reverse;
+    }
+
+    .project-info {
+        width: 40%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+  
+    .image-container {
+        width: 60%;
+    }
+
+ 
+
+    
+
+
+}
