@@ -34,6 +34,11 @@ body {
 }
 
 /* Header */
+header {
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
+}
 
 #navbarSupportedContent {
     justify-content: end !important;
@@ -95,6 +100,7 @@ main {
 #about {
     padding: 30px 0px;
     height: 100vh;
+    scroll-margin-top: 80px;
 }
 
 .about-text {
@@ -121,6 +127,7 @@ main {
 #skills {
     height: 100vh;
     padding: 30px 0;
+    scroll-margin-top: 80px;
 }
 
 .skills-container {
@@ -145,6 +152,10 @@ main {
 }
 
 /* proyectos */
+
+#projects{
+    scroll-margin-top: 80px;
+}
 
 
 .project-card {
@@ -194,15 +205,31 @@ main {
 }
 
 /* Formacion */
+
+#formacion{
+    scroll-margin-top: 80px;
+}
+
 .formacion-card-container{
     display: flex;
     flex-direction: column;
     gap: 20px;
 }
 
+.formacion-card{
+    display: flex;
+    flex-direction: column;
+}
+.formacion-info{
+    flex-grow: 1;
+}
+
+
+
+
 .formacion-image-container{
 padding: 20px;
-
+flex-grow: 1;
 }
 .formacion-image{
     width: 100%;
@@ -311,10 +338,4 @@ footer p {
         height: 70%;
        
     }
-   
- 
-
-    
-
-
 }
