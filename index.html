@@ -41,7 +41,7 @@
                             <a class="nav-link active" aria-current="page" href="#formacion">Formacíon</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="#">Contacto</a>
+                            <a class="nav-link active" aria-current="page" href="#contacto">Contacto</a>
                         </li>
                     </ul>
                 </div>
@@ -61,7 +61,7 @@
 
         <section id="about">
             <h2 class="subtitle">Sobre mi</h2>
-            <div class="about-text">
+            <div class="about-text black-shadow">
                 <p>Hasta la fecha he formado parte de un negocio de construcción, gestionando proyectos tras un
                     escritorio
                     como ejecutando obras en terreno.</p>
@@ -274,8 +274,7 @@
 
                 <article class="formacion-card">
                     <div class="formacion-image-container">
-                        <img class="formacion-image"
-                            src="./assets/img/formacion/inacap.png" />
+                        <img class="formacion-image" src="./assets/img/formacion/inacap.png" />
                     </div>
                     <div class="formacion-info">
                         <h5>Ing. Administración de empresas mención Finanzas</h5>
@@ -287,7 +286,18 @@
         </section>
 
         <section id="contacto">
-
+            <h2 class="subtitle">Contacto</h2>
+            <form id="contact-form" action="#">
+                <label for="nombre">Nombre</label>
+                <input type="text" placeholder="Ingrese su nombre" id="nombre" name="nombre" required />
+                <label for="correo">Correo electrónico</label>
+                <input type="email" placeholder="Ingrese su correo electrónico" id="correo" name="correo" required />
+                <label for="subject">Asunto</label>
+                <input type="text" placeholder="Asunto" id="subject" name="subject" required />
+                <label for="message">Mensaje</label>
+                <textarea name="message" id="message" cols="30" rows="10" required placeholder="Ingrese su mensaje"></textarea>
+                <button id="form-btn" type="submit">Enviar</button>
+            </form>
         </section>
 
     </main>
