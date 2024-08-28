@@ -31,6 +31,7 @@ ul {
     list-style: none;
 }
 
+
 /* Body */
 body {
     background-color: #212529;
@@ -149,6 +150,11 @@ main {
     padding: 30px 0px;
 }
 
+.project-cards-container {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
 
 .project-card {
     padding: 10px 0;
@@ -166,7 +172,7 @@ main {
     box-shadow: 2px 2px 10px black;
 }
 
-.project-text p {
+.project-text {
     margin: 30px 0;
     text-align: start;
     background-color: rgba(156, 156, 156, 0.1);
@@ -175,9 +181,15 @@ main {
     box-shadow: 2px 2px 10px black;
 }
 
+.ver-mas{
+    margin-bottom: 10px;
+    text-shadow:  0px 0px 5px #6BD1FF;
+}
+
 .project-button-box {
     display: flex;
     justify-content: space-around;
+     
 }
 
 .project-btn {
@@ -186,6 +198,12 @@ main {
     border: none;
     border-radius: 20px;
     box-shadow: 2px 2px 10px black;
+}
+
+.project-btn:hover{
+    box-shadow:  0px 0px 30px #6BD1FF;
+    border: 1px solid #6BD1FF;
+    transition: box-shadow 0.6s, border 0.6s; 
 }
 
 .repo {
@@ -218,11 +236,6 @@ main {
     flex-direction: column;
     box-shadow: 2px 2px 10px black;
 }
-
-.formacion-info {
-    flex-grow: 1;
-}
-
 
 .formacion-image-container {
     padding: 20px;
@@ -260,6 +273,12 @@ main {
     box-shadow: 2px 2px 10px black;
     color: white;
     resize: none;
+    outline: none;
+}
+
+#contact-form input:focus,
+#contact-form textarea:focus{
+    outline:1px solid #6BD1FF;
 }
 
 #form-btn {
@@ -271,7 +290,15 @@ main {
     margin-top: 20px;
     background-color: #1975e8;
     color: white;
+  
 }
+
+#form-btn:hover{
+    box-shadow:  0px 0px 30px #6BD1FF;
+    border: 1px solid #6BD1FF;
+    transition: box-shadow 0.6s, border 0.6s;
+}
+
 
 
 /* Footer */
@@ -337,6 +364,11 @@ footer p {
         grid-area: 2/4/3/5;
     }
 
+    .skill-item{
+        filter: grayscale(100%);
+        transition: filter 0.6s , box-shadow 0.6s;
+    }
+
     /* Sección Proyectos */
 
     .project-card {
@@ -356,8 +388,10 @@ footer p {
     }
 
     .image-container {
+      
         width: 60%;
     }
+
 
     /* Formacion */
     .formacion-card-container {
