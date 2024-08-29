@@ -25,6 +25,8 @@ p {
 a {
     text-decoration: none;
     color: #fff;
+    cursor: pointer;
+
 }
 
 ul {
@@ -93,13 +95,14 @@ header {
     margin: 0 !important;
 }
 
-.nav-item {
-    transition: scale 0.5s, text-shadow 0.5s;
+.nav-item a {
+    transition: scale 0.5s, text-shadow 0.5s, color 0.5s;
 }
 
-.nav-item:hover {
+.nav-item a:hover {
     scale: 1.1;
-    text-shadow: 0px 0px 5px #fff;
+    text-shadow: 0px 0px 5px #6BD1FF;
+    color: #6BD1FF !important;
 }
 
 /* Main */
@@ -147,8 +150,9 @@ main {
 }
 
 .social-links i:hover {
-   background-color:  rgba(156, 156, 156, 0.1);
+    background-color: rgba(156, 156, 156, 0.1);
 }
+
 /* Sección sobre mi */
 #about {
     padding: 30px 0px;
@@ -229,25 +233,24 @@ main {
     box-shadow: 2px 2px 10px black;
 }
 
-.ver-mas{
-    cursor: pointer;
+.ver-mas {
     color: #1975e8;
 }
 
-.modal-icon-box{
+.modal-icon-box {
     display: flex;
     width: 100%;
-    margin:30px 0px;
+    margin: 30px 0px;
     gap: 20px;
     justify-content: center;
 }
 
-.modal-icon-box img{
+.modal-icon-box img {
     width: 5%;
 }
 
-.modal-text{
-    margin: 0px 20px 20px 30px ;
+.modal-text {
+    margin: 0px 20px 20px 30px;
     text-align: start;
     background-color: rgba(156, 156, 156, 0.1);
     padding: 20px;
@@ -258,11 +261,11 @@ main {
 .project-button-box {
     display: flex;
     justify-content: space-around;
-     
+
 }
 
-.btn-anchor{
-width: 40%;
+.btn-anchor {
+    width: 40%;
 }
 
 .project-btn {
@@ -271,13 +274,13 @@ width: 40%;
     border: none;
     border-radius: 20px;
     box-shadow: 2px 2px 10px black;
-    
+
 }
 
-.project-btn:hover{
-    box-shadow:  0px 0px 30px #6BD1FF;
+.project-btn:hover {
+    box-shadow: 0px 0px 30px #6BD1FF;
     border: 1px solid #6BD1FF;
-    transition: box-shadow 0.6s, border 0.6s; 
+    transition: box-shadow 0.6s, border 0.6s;
 }
 
 .repo {
@@ -352,8 +355,8 @@ width: 40%;
 }
 
 #contact-form input:focus,
-#contact-form textarea:focus{
-    outline:1px solid #6BD1FF;
+#contact-form textarea:focus {
+    outline: 1px solid #6BD1FF;
 }
 
 #form-btn {
@@ -365,16 +368,18 @@ width: 40%;
     margin-top: 20px;
     background-color: #1975e8;
     color: white;
-  
+
 }
 
-#form-btn:hover{
-    box-shadow:  0px 0px 30px #6BD1FF;
+#form-btn:hover {
+    box-shadow: 0px 0px 30px #6BD1FF;
     border: 1px solid #6BD1FF;
     transition: box-shadow 0.6s, border 0.6s;
 }
 
-
+.social-sharing-float {
+    display: none;
+}
 
 /* Footer */
 footer {
@@ -439,9 +444,9 @@ footer {
         grid-area: 2/4/3/5;
     }
 
-    .skill-item{
+    .skill-item {
         filter: grayscale(100%);
-        transition: filter 0.6s , box-shadow 0.6s;
+        transition: filter 0.6s, box-shadow 0.6s;
     }
 
     /* Sección Proyectos */
@@ -463,7 +468,7 @@ footer {
     }
 
     .image-container {
-      height: fit-content;
+        height: fit-content;
         width: 60%;
     }
 
@@ -477,9 +482,48 @@ footer {
     .formacion-image-container {
         height: 70%;
     }
+
     /* contacto*/
 
     #contact-form {
         width: 66.6%;
+    }
+
+    /* Barra de RRSS*/
+ 
+
+    #social-sharing-float {
+        display: none;
+        position: fixed;
+        left: 0;
+        bottom: 20px;
+        background-color: rgba(156, 156, 156, 0.1);
+        padding: 10px 15px;
+        border-radius: 0px 10px 10px 0px;
+        width: max-content;
+
+    }
+
+    .social-links-float {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        font-size: 30px;
+        margin: 0;
+        padding: 0;
+        transition:  2s;
+    }
+
+    .social-links-float i {
+        transition: color 0.5s, filter 0.5s;
+    }
+
+    .social-links-float i:hover {
+        color: #6BD1FF;
+        filter: drop-shadow(0px 0px 10px #6BD1FF);
+    }
+
+    footer .social-links {
+        display: none;
     }
 }
