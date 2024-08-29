@@ -1,13 +1,12 @@
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css");
+
+
 /* Global */
 * {
     box-sizing: border-box;
     padding: 0;
     margin: 0;
     font-family: "Roboto mono", sans-serif;
-}
-
-.black-shadow {
-    box-shadow: 2px 2px 10px black;
 }
 
 .title,
@@ -20,6 +19,7 @@ p {
     text-align: justify;
     font-size: 16px;
     margin: 0;
+    color: #fff;
 }
 
 a {
@@ -36,6 +36,46 @@ ul {
 body {
     background-color: #212529;
     color: #fff;
+}
+
+/* goTopButton */
+#myBtn {
+    display: none;
+    /* Hidden by default */
+    position: fixed;
+    /* Fixed/sticky position */
+    bottom: 20px;
+    /* Place the button at the bottom of the page */
+    right: 30px;
+    /* Place the button 30px from the right */
+    z-index: 99;
+    /* Make sure it does not overlap */
+    border: none;
+    /* Remove borders */
+    outline: none;
+    /* Remove outline */
+    background-color: rgba(156, 156, 156, 0.1);
+    /* Set a background color */
+    color: white;
+    /* Text color */
+    cursor: pointer;
+    /* Add a mouse pointer on hover */
+    padding: 15px;
+    /* Some padding */
+    border-radius: 50%;
+    /* Rounded corners */
+    font-size: 18px;
+    /* Increase font size */
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
+#myBtn:hover {
+    background-color: rgba(156, 156, 156, 0.6);
+    /* Add a dark-grey background on hover */
 }
 
 /* Header */
@@ -96,11 +136,19 @@ main {
     text-align: center;
 }
 
-.text-container-banner p {
-    text-align: justify;
-
+.social-links a {
+    font-size: 30px;
 }
 
+.social-links i {
+    transition: background-color 0.4s;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.social-links i:hover {
+   background-color:  rgba(156, 156, 156, 0.1);
+}
 /* Sección sobre mi */
 #about {
     padding: 30px 0px;
@@ -182,8 +230,29 @@ main {
 }
 
 .ver-mas{
-    margin-bottom: 10px;
-    text-shadow:  0px 0px 5px #6BD1FF;
+    cursor: pointer;
+    color: #1975e8;
+}
+
+.modal-icon-box{
+    display: flex;
+    width: 100%;
+    margin:30px 0px;
+    gap: 20px;
+    justify-content: center;
+}
+
+.modal-icon-box img{
+    width: 5%;
+}
+
+.modal-text{
+    margin: 0px 20px 20px 30px ;
+    text-align: start;
+    background-color: rgba(156, 156, 156, 0.1);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 10px black;
 }
 
 .project-button-box {
@@ -192,12 +261,17 @@ main {
      
 }
 
+.btn-anchor{
+width: 40%;
+}
+
 .project-btn {
     padding: 0.4rem;
-    width: 40%;
+    width: 100%;
     border: none;
     border-radius: 20px;
     box-shadow: 2px 2px 10px black;
+    
 }
 
 .project-btn:hover{
@@ -214,8 +288,9 @@ main {
     background-color: rgba(156, 156, 156, 0.1);
 }
 
-.project-btn a {
+.project-btn p {
     font-weight: bold;
+    text-align: center;
 }
 
 /* Formacion */
@@ -303,12 +378,12 @@ main {
 
 /* Footer */
 footer {
-    padding: 1rem;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
 
-}
-
-footer p {
-    text-align: center;
 }
 
 
@@ -388,7 +463,7 @@ footer p {
     }
 
     .image-container {
-      
+      height: fit-content;
         width: 60%;
     }
 
