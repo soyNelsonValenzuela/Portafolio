@@ -26,22 +26,22 @@
                     aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <div class="collapse navbar-collapse " id="navbarSupportedContent">
                     <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                         <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="#about">Sobre mi</a>
+                            <a class="nav-link" aria-current="page" href="#about">Sobre mi</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="#skills">Skills</a>
+                            <a class="nav-link" aria-current="page" href="#skills">Skills</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="#projects">Proyectos</a>
+                            <a class="nav-link" aria-current="page" href="#projects">Proyectos</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="#formacion">Formacíon</a>
+                            <a class="nav-link" aria-current="page" href="#formacion">Formación</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="#contacto">Contacto</a>
+                            <a class="nav-link" aria-current="page" href="#contacto">Contacto</a>
                         </li>
                     </ul>
                 </div>
@@ -54,8 +54,22 @@
             <img src="./assets/img/profile.png" alt="foto de perfil" id="foto-perfil">
             <div class="text-container-banner">
                 <h1 class="title">Hola soy Nelson Valenzuela y hago paginas web</h1>
-                <p>Actualmente participo del programa de formación Full Stack Java Script de talento digital impartido
-                    por Edutecno</p>
+                <p>
+                    Actualmente participo del programa de formación Full Stack Java Script de talento digital impartido
+                    por Edutecno
+                </p>
+
+                <div class="social-links">
+                    <a href="https://www.instagram.com/soynelsonvalenzuela/" target="_blank" class="me-3">
+                        <i class="bi bi-instagram"></i>
+                    </a>
+                    <a href="https://github.com/soyNelsonValenzuela" target="_blank" class="me-3">
+                        <i class="bi bi-github"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/in/nelsonvalenzuelagomez/" target="_blank">
+                        <i class="bi bi-linkedin"></i>
+                    </a>
+                </div>
             </div>
         </section>
 
@@ -72,12 +86,6 @@
                 </p>
                 <p>Te invito a conocer un poco más de mi</p>
             </div>
-            <!-- <ul class="networks">
-                <li class="title__network__item"><a href=""> <img src="./assets/img/arrow.png"> </a></li>
-                <li class="title__network__item"><a href=""> <img src="./assets/img/arrow.png"></a></li>
-                <li class="title__network__item"><a href=""> <img src="./assets/img/arrow.png"></a></li>
-                <li class="title__network__item"><a href=""> <img src="./assets/img/arrow.png"></a></li>
-            </ul> -->
         </section>
 
         <section id="skills">
@@ -117,62 +125,156 @@
                     <p>Github</p>
                 </div>
             </div>
-
         </section>
-
-
 
         <section id="projects">
             <h2 class="subtitle">Proyectos</h2>
             <div class="project-cards-container">
                 <article class="project-card">
                     <div class="image-container">
-                        <img class="project-image" src="./assets/img/proyectos/juego-secreto.png" alt="">
+                        <a href="https://soynelsonvalenzuela.github.io/Juego-Secreto/" target="_blank"><img
+                                class="project-image" src="./assets/img/proyectos/juego-secreto.png" alt=""></a>
                     </div>
+
                     <div class="project-info">
                         <div class="project-text">
                             <h3>Juego secreto</h3>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus, asperiores. Adipisci
-                                ipsum quo sint. Quidem totam tempora veritatis unde maxime!
+                            <p>
+                                Es un juego de adivinanza donde el usuario debe adivinar un número secreto entre 1 y 10.
                             </p>
+
+                            <a class="ver-mas" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                                Ver más...
+                            </a>
+
+                            <!-- Modal -->
+                            <div class="modal fade modal-lg " id="exampleModal" tabindex="-1"
+                                aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                <div class="modal-dialog ">
+                                    <div class="modal-content bg-dark">
+                                        <div class="modal-header ">
+                                            <h1 class="modal-title fs-5" id="exampleModalLabel">Juego Secreto</h1>
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                aria-label="Close"></button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <img src="./assets/img/proyectos/juego-secreto.png" class="project-image"
+                                                alt="">
+                                            <div class="modal-icon-box">
+                                                <img src="./assets/img/logos/html-5_logo.png" alt="">
+                                                <img src="./assets/img/logos/css-3_logo.png" alt="">
+                                                <img src="./assets/img/logos/js_logo.png" alt="">
+                                            </div>
+                                            <div class="modal-text">
+                                                <p>
+                                                    Es un juego desarrollado durante la etapa de formación en lógica de
+                                                    programación del programa Oracle ONE impartido por Alura Latam. En
+                                                    el cual el usuario tiene que adivinar un número
+                                                    secreto entre 1 y 10. Cada que el usuario ingrese una respuesta
+                                                    errada el sistema indicara si el número secreto es mayor o menor. Y
+                                                    cuando el usuario acierte se le indica en cuantos intentos lo
+                                                    logró.<br> Se utilizo Java Script para programar la lógica de este
+                                                    ejercicio.
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-secondary"
+                                                data-bs-dismiss="modal">Close</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                         <div class="project-button-box">
-                            <button class="project-btn repo" type="button">
-                                <a class="btn-anchor" href="https://github.com/soyNelsonValenzuela/Juego-Secreto.git"
-                                    target="blank">Repositorio</a>
-                            </button>
-                            <button class="project-btn demo" type="button">
-                                <a class="btn-anchor" href="https://soynelsonvalenzuela.github.io/Juego-Secreto/"
-                                    target="blank">Demo</a>
-                            </button>
-
+                            <a class="btn-anchor" href="https://github.com/soyNelsonValenzuela/Juego-Secreto.git"
+                                target="blank">
+                                <button class="project-btn repo" type="button">
+                                    <p>Repositorio</p>
+                                </button>
+                            </a>
+                            <a class="btn-anchor" href="https://soynelsonvalenzuela.github.io/Juego-Secreto/"
+                                target="blank">
+                                <button class="project-btn demo" type="button">
+                                    <p>Demo</p>
+                                </button>
+                            </a>
                         </div>
                     </div>
                 </article>
 
                 <article class="project-card">
+
                     <div class="image-container">
                         <img class="project-image" src="./assets/img/proyectos/aluraPlay.png" alt="">
                     </div>
+
                     <div class="project-info">
                         <div class="project-text">
                             <h3>Alura Play</h3>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus, asperiores. Adipisci
-                                ipsum quo sint. Quidem totam tempora veritatis unde maxime!
-                            </p>
-                        </div>
-                        <div class="project-button-box">
-                            <button class="project-btn repo" type="button">
-                                <a class="btn-anchor" href="https://github.com/soyNelsonValenzuela/AluraPlay.git"
-                                    target="blank">Repositorio</a>
-                            </button>
-                            <button class="project-btn demo" type="button">
-                                <a class="btn-anchor" href="https://soynelsonvalenzuela.github.io/AluraPlay/"
-                                    target="blank">Demo</a>
-                            </button>
 
+                            <p>
+                                Es una plataforma responsiva de videos educativos de Alura Latam.
+                            </p>
+
+                            <a class="ver-mas" data-bs-toggle="modal" data-bs-target="#modal-alura-play">
+                                Ver más...
+                            </a>
+
+                            <!-- Modal -->
+                            <div class="modal fade modal-lg " id="modal-alura-play" tabindex="-1"
+                                aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                <div class="modal-dialog ">
+                                    <div class="modal-content bg-dark">
+                                        <div class="modal-header ">
+                                            <h1 class="modal-title fs-5" id="exampleModalLabel">Alura Play</h1>
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                aria-label="Close"></button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <img src="./assets/img/proyectos/aluraPlay.png" class="project-image"
+                                                alt="">
+                                            <div class="modal-icon-box">
+                                                <img src="./assets/img/logos/html-5_logo.png" alt="">
+                                                <img src="./assets/img/logos/css-3_logo.png" alt="">
+                                            </div>
+                                            <div class="modal-text">
+                                                <p>
+                                                    Alura Play es una plataforma de videos construida durante la etapa
+                                                    de formación de desarrollo Front End del programa Oracle One
+                                                    impartido por Alura Latam. Donde se ejercitaron conceptos como :
+                                                    utilizacion de códigos Embed, flexbox y responsividad con media
+                                                    querys utilizando la metodología Mobile First.
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-secondary"
+                                                data-bs-dismiss="modal">Close</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="project-button-box">
+                            <a class="btn-anchor" href="https://github.com/soyNelsonValenzuela/AluraPlay.git"
+                                target="blank">
+                                <button class="project-btn repo" type="button">
+                                    <p>Repositorio</p>
+                                </button>
+                            </a>
+                            <a class="btn-anchor" href="https://soynelsonvalenzuela.github.io/AluraPlay/"
+                                target="blank">
+                                <button class="project-btn demo" type="button">
+                                    <p>Demo</p>
+                                </button>
+                            </a>
                         </div>
                     </div>
+
+
+
                 </article>
 
                 <article class="project-card">
@@ -182,46 +284,66 @@
                     <div class="project-info">
                         <div class="project-text">
                             <h3>Alura Midi</h3>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus, asperiores. Adipisci
-                                ipsum quo sint. Quidem totam tempora veritatis unde maxime!
+                            <p>Es una aplicación que simula un instrumento musical de interfaz digital.
                             </p>
+                            <a class="ver-mas" data-bs-toggle="modal" data-bs-target="#modal-alura-midi">
+                                Ver más...
+                            </a>
+
+                            <!-- Modal -->
+                            <div class="modal fade modal-lg " id="modal-alura-midi" tabindex="-1"
+                                aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                <div class="modal-dialog ">
+                                    <div class="modal-content bg-dark">
+                                        <div class="modal-header ">
+                                            <h1 class="modal-title fs-5" id="exampleModalLabel">Alura Play</h1>
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                aria-label="Close"></button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <img src="./assets/img/proyectos/aluraMidi.png" class="project-image"
+                                                alt="">
+                                            <div class="modal-icon-box">
+                                                <img src="./assets/img/logos/html-5_logo.png" alt="">
+                                                <img src="./assets/img/logos/css-3_logo.png" alt="">
+                                                <img src="./assets/img/logos/js_logo.png" alt="">
+                                            </div>
+                                            <div class="modal-text">
+                                                <p>
+                                                    Alura Midi es una aplicación construida durante la etapa de
+                                                    formación de desarrollo Front End del programa Oracle One impartido
+                                                    por Alura Latam. Donde se ejercitaron conceptos como: utilización de
+                                                    sonidos , capturar lista de nodos del DOM, utilización del bucle for
+                                                    para recorrer un array y poner en escucha elementos del DOM
+                                                    otorgándole la función de emitir un sonido y cambiar el estilo del
+                                                    elementos a través de Java Script.
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-secondary"
+                                                data-bs-dismiss="modal">Close</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
+
                         <div class="project-button-box">
-                            <button class="project-btn repo" type="button">
-                                <a class="btn-anchor" href="https://github.com/soyNelsonValenzuela/Alura-Midi.git"
-                                    target="blank">Repositorio</a>
-                            </button>
-                            <button class="project-btn demo" type="button">
-                                <a class="btn-anchor" href="https://soynelsonvalenzuela.github.io/Alura-Midi/"
-                                    target="blank">Demo</a>
-                            </button>
-
+                            <a class="btn-anchor" href="https://github.com/soyNelsonValenzuela/Alura-Midi.git"
+                                target="blank">
+                                <button class="project-btn repo" type="button">
+                                    <p>Repositorio</p>
+                                </button>
+                            </a>
+                            <a class="btn-anchor" href="https://soynelsonvalenzuela.github.io/Alura-Midi/"
+                                target="blank">
+                                <button class="project-btn demo" type="button">
+                                    <p>Demo</p>
+                                </button>
+                            </a>
                         </div>
-                    </div>
-                </article>
 
-                <article class="project-card">
-                    <div class="image-container">
-                        <img class="project-image" src="./assets/img/proyectos/aluraMidi.png" alt="">
-                    </div>
-                    <div class="project-info">
-                        <div class="project-text">
-                            <h3>Alura Midi</h3>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus, asperiores. Adipisci
-                                ipsum quo sint. Quidem totam tempora veritatis unde maxime!
-                            </p>
-                        </div>
-                        <div class="project-button-box">
-                            <button class="project-btn repo" type="button">
-                                <a class="btn-anchor" href="https://github.com/soyNelsonValenzuela/Alura-Midi.git"
-                                    target="blank">Repositorio</a>
-                            </button>
-                            <button class="project-btn demo" type="button">
-                                <a class="btn-anchor" href="https://soynelsonvalenzuela.github.io/Alura-Midi/"
-                                    target="blank">Demo</a>
-                            </button>
-
-                        </div>
                     </div>
                 </article>
 
@@ -295,18 +417,35 @@
                 <label for="subject">Asunto</label>
                 <input type="text" placeholder="Asunto" id="subject" name="subject" required />
                 <label for="message">Mensaje</label>
-                <textarea name="message" id="message" cols="30" rows="10" required placeholder="Ingrese su mensaje"></textarea>
+                <textarea name="message" id="message" cols="30" rows="10" required
+                    placeholder="Ingrese su mensaje"></textarea>
                 <button id="form-btn" type="submit">Enviar</button>
             </form>
         </section>
 
+        <button onclick="topFunction()" id="myBtn" title="Go to top"><ion-icon
+                name="arrow-up-outline"></ion-icon></button>
     </main>
 
     <footer>
         <p> Desarrollado por Nelson Valenzuela</p>
         <p>2024</p>
+        <div class="social-links">
+            <a href="https://www.instagram.com/soynelsonvalenzuela/" target="_blank" class="me-3">
+                <i class="bi bi-instagram"></i>
+            </a>
+            <a href="https://github.com/soyNelsonValenzuela" target="_blank" class="me-3">
+                <i class="bi bi-github"></i>
+            </a>
+            <a href="https://www.linkedin.com/in/nelsonvalenzuelagomez/" target="_blank">
+                <i class="bi bi-linkedin"></i>
+            </a>
+        </div>
     </footer>
 
+    <!-- Ion-Icon -->
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
         crossorigin="anonymous"></script>
