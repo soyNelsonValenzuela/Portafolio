@@ -330,6 +330,8 @@ main {
     border-radius: 20px;
 }
 
+
+
 /* Contacto */
 #contacto {
     scroll-margin-top: 80px;
@@ -337,6 +339,12 @@ main {
 }
 
 #contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.formulario-campo{
     display: flex;
     flex-direction: column;
     gap: 10px;
@@ -359,6 +367,17 @@ main {
     outline: 1px solid #6BD1FF;
 }
 
+.mensaje-error {
+    display: block;
+    margin-top: 5px;
+    font-weight: 400;
+    font-style: italic;
+    font-size: .925rem;
+    color: red;
+}
+
+
+
 #form-btn {
     padding: 0.4rem;
     width: 40%;
@@ -377,7 +396,7 @@ main {
     transition: box-shadow 0.6s, border 0.6s;
 }
 
-.social-sharing-float {
+#social-sharing-float {
     display: none;
 }
 
