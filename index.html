@@ -410,15 +410,37 @@
         <section id="contacto">
             <h2 class="subtitle">Contacto</h2>
             <form id="contact-form" action="#">
-                <label for="nombre">Nombre</label>
-                <input type="text" placeholder="Ingrese su nombre" id="nombre" name="nombre" required />
-                <label for="correo">Correo electrónico</label>
-                <input type="email" placeholder="Ingrese su correo electrónico" id="correo" name="correo" required />
-                <label for="subject">Asunto</label>
-                <input type="text" placeholder="Asunto" id="subject" name="subject" required />
-                <label for="message">Mensaje</label>
-                <textarea name="message" id="message" cols="30" rows="10" required
-                    placeholder="Ingrese su mensaje"></textarea>
+                
+                <fieldset class="formulario-campo">
+                    <label class="campo-etiqueta" for="nombre">Nombre</label>
+                    <input type="text" placeholder="Ingrese su nombre" id="nombre" class="campo-completo" name="nombre"
+                        required minlength="3" />
+                    <span class="mensaje-error"></span>
+                </fieldset>
+
+                <fieldset class="formulario-campo">
+
+                    <label class="campo-etiqueta" for="correo">Correo electrónico</label>
+                    <input name="correo" id="correo" class="campo-completo" type="email" minlength="5"
+                        placeholder="Ingrese su correo electrónico" required />
+                    <span class="mensaje-error"></span>
+
+                </fieldset>
+
+
+                <fieldset class="formulario-campo">
+                    <label class="campo-etiqueta" for="asunto">Asunto</label>
+                    <input type="text" placeholder="Asunto" class="campo-completo" id="asunto" name="asunto" maxlength="50" required />
+                    <span class="mensaje-error"></span>
+                </fieldset>
+
+                <fieldset class="formulario-campo">
+                    <label class="campo-etiqueta" for="mensajeUsuario">Mensaje</label>
+                    <textarea name="mensajeUsuario" id="mensajeUsuario" cols="30" rows="10" 
+                        placeholder="Ingrese su mensaje" class="campo-completo" minlength="10" maxlength="1000" required></textarea>
+                    <span class="mensaje-error"></span>
+                </fieldset>
+
                 <button id="form-btn" type="submit">Enviar</button>
             </form>
         </section>
@@ -429,16 +451,17 @@
 
         <aside id="social-sharing-float">
             <ul class="social-links-float">
-                <li class="social-item"><a href="https://www.instagram.com/soynelsonvalenzuela/" target="_blank" class="">
-                    <i class="bi bi-instagram"></i>
-                </a></li>
+                <li class="social-item"><a href="https://www.instagram.com/soynelsonvalenzuela/" target="_blank"
+                        class="">
+                        <i class="bi bi-instagram"></i>
+                    </a></li>
                 <li class="social-item"><a href="https://github.com/soyNelsonValenzuela" target="_blank" class="">
-                    <i class="bi bi-github"></i>
-                </a></li>
-                <li class="social-item">  <a href="https://www.linkedin.com/in/nelsonvalenzuelagomez/" target="_blank">
-                    <i class="bi bi-linkedin"></i>
-                </a></li>
-                
+                        <i class="bi bi-github"></i>
+                    </a></li>
+                <li class="social-item"> <a href="https://www.linkedin.com/in/nelsonvalenzuelagomez/" target="_blank">
+                        <i class="bi bi-linkedin"></i>
+                    </a></li>
+
             </ul>
         </aside>
     </main>
@@ -465,7 +488,8 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
         crossorigin="anonymous"></script>
-    <script src="./assets/js/script.js"></script>
+
+    <script src="./assets/js/script.js" type="module"></script>
 </body>
 
 </html>
