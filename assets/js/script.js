@@ -1,5 +1,9 @@
+import { verificarCampo } from "./Validaciones.js";
+import {scrollFunction} from "./scrollFunction.js";
+
 let navItems = document.querySelectorAll('.nav-link')
 let skillItem = document.querySelectorAll('.skill-item')
+
 
 //Oculta menu colapsable cuando seleccionamos algun item en la version mobile
 
@@ -28,31 +32,25 @@ skillItem.forEach(item => {
   })
 })
 
-// Get the buttons:
-
-
-let topButton = document.getElementById("myBtn");
-let socialSharing = document.getElementById('social-sharing-float');
-
-
-
 // When the user scrolls down 500px from the top of the document, show the buttons
 window.onscroll = function () { scrollFunction() };
 
-function scrollFunction() {
-  if (document.body.scrollTop > 500 || document.documentElement.scrollTop > 500) {
-    topButton.style.display = "flex";
-    if (document.body.clientWidth > 1024) {
-      socialSharing.style.display = "block"
-    }
-  } else {
-    topButton.style.display = "none";
-    socialSharing.style.display = "none";
-  }
-}
-
 // When the user clicks on the button, scroll to the top of the document
-topButton.addEventListener('click', ()=> {
+document.getElementById("myBtn").addEventListener('click', ()=>{
   document.body.scrollTop = 0; // For Safari
   document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
 })
+
+
+// VALIDACION DE FORMULARIO
+document.querySelectorAll("[required]").forEach((campo) => {
+  campo.addEventListener("blur", () => verificarCampo(campo))
+  campo.addEventListener("invalid", evento => evento.preventDefault)
+});
+
+
+
+
+
+
+
